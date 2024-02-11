@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Navbar from './components/header/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -12,6 +10,7 @@ import Favourite from './Pages/Favourite'
 import SignIn from './Pages/SignIn'
 import Feedback from './Pages/Feedback'
 import ProductDetail from './Pages/ProductDetail'
+import Aboutus from './Pages/Aboutus'
 
 function App() {
  
@@ -25,6 +24,7 @@ function App() {
       {/* <Route path='/' element={<Home/>} />  */}
           <Route path='/services' element={<Services />} />
          <Route path='/products' element={<Products/>} />
+         <Route path='/aboutus' element={<Aboutus/>} />
           <Route path='/cart' element={<Carts/>} />
           <Route path='/favourite' element= {<Favourite/>}/>
           <Route path='/signin' element={<SignIn/>} />
