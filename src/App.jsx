@@ -12,6 +12,7 @@ import Favourite from './Pages/Favourite'
 import SignIn from './Pages/SignIn'
 import Feedback from './Pages/Feedback'
 import ProductDetail from './Pages/ProductDetail'
+import Home from './Pages/Home'
 
 function App() {
  
@@ -19,12 +20,15 @@ function App() {
   return (
     <>
 
+      
+
       <BrowserRouter>
         <Navbar />
+
         <Routes>
-      {/* <Route path='/' element={<Home/>} />  */}
+          <Route path='/' element={<Home/>} />  
           <Route path='/services' element={<Services />} />
-         <Route path='/products' element={<Products/>} />
+          <Route path='/products' element={<Products/>} />
           <Route path='/cart' element={<Carts/>} />
           <Route path='/favourite' element= {<Favourite/>}/>
           <Route path='/signin' element={<SignIn/>} />
