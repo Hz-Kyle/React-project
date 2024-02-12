@@ -10,6 +10,7 @@ export default {
         'muli':['Mulish','san-serif'],
         'robotoSlap' : ['Roboto Slab','san-serif'],
         'stardos' : ['Stardos Stencil','san-serif'],
+        'inter' : ['Inter','san-serif'],
 
       },
       colors : {

@@ -12,7 +12,8 @@ import Favourite from './Pages/Favourite'
 import SignIn from './Pages/SignIn'
 import Feedback from './Pages/Feedback'
 import ProductDetail from './Pages/ProductDetail'
-
+import Login from './Pages/Login'
+import Aboutus from './Pages/Aboutus'
 function App() {
  
 
@@ -23,15 +24,19 @@ function App() {
         <Navbar />
         <Routes>
       {/* <Route path='/' element={<Home/>} />  */}
+                   
           <Route path='/services' element={<Services />} />
-         <Route path='/products' element={<Products/>} />
+          <Route path='/products' element={<Products/>} />
+          <Route path='/aboutus' element = {<Aboutus/>}/> 
           <Route path='/cart' element={<Carts/>} />
           <Route path='/favourite' element= {<Favourite/>}/>
           <Route path='/signin' element={<SignIn/>} />
           <Route path='/feedback' element={<Feedback/>} /> 
           <Route path='/productDetail/:id' element = {<ProductDetail/>}  />
+          <Route path='/login' element={<Login/>}/>
         </Routes>
       </BrowserRouter>
+      
       <Footer />
     </>
   )
