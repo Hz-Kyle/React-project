@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Navbar from './components/header/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -11,9 +9,13 @@ import Carts from './Pages/Carts'
 import Favourite from './Pages/Favourite'
 import SignIn from './Pages/SignIn'
 import Feedback from './Pages/Feedback'
-import ProductDetail from './Pages/ProductDetail'
-import Login from './Pages/Login'
+import ProductDetail from './Pages/ProductDetai
+feature/Products
 import Aboutus from './Pages/Aboutus'
+
+import Login from './Pages/Login'
+
+ main
 function App() {
  
 
@@ -26,8 +28,11 @@ function App() {
       {/* <Route path='/' element={<Home/>} />  */}
                    
           <Route path='/services' element={<Services />} />
-          <Route path='/products' element={<Products/>} />
-          <Route path='/aboutus' element = {<Aboutus/>}/> 
+ feature/Products
+         <Route path='/products' element={<Products/>} />
+         <Route path='/aboutus' element={<Aboutus/>} />
+
+     main
           <Route path='/cart' element={<Carts/>} />
           <Route path='/favourite' element= {<Favourite/>}/>
           <Route path='/signin' element={<SignIn/>} />

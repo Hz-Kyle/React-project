@@ -9,6 +9,7 @@ const Carts = () => {
     setCount(count+1)
   }
   return (
+
     <>
     <div className="m-auto">
       <h1 className="text-center font-bold text-3xl mt-5">Cart List</h1>
@@ -79,6 +80,7 @@ const Carts = () => {
           <button type="button" className="bg-blue-600 rounded-2xl w-28 h-8 text-white">Remove All</button>
       </div>
       </>
+ main
   )
 }
 
