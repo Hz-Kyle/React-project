@@ -18,7 +18,7 @@ function RandomProduct() {
 
     return (
         <>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid lg:grid-cols-3 sm:flex items-center justify-center sm:grid-col-0 sm:mx-auto gap-4'>
                 {randomProducts.map((product) =>
                     <ProductCard key={product.id}
                         id={product.id}

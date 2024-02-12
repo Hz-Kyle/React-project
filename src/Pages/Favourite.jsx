@@ -5,14 +5,16 @@ const Favourite = () => {
 
   return (
     <>
-    <div className="container mx-auto mt-10">
-    <div className='grid md:grid-cols-3 gap-4 '>
-      {ProductList.filter((product) => product.favourite == true).map((prductList) =>
-        <ProductCard key={prductList.id}  
-        id={prductList.id} name={prductList.name}
-         price={prductList.price} 
-         img={prductList.img}
-         stock={prductList.stock} />
+    <div className="max-w-7xl  mx-auto mt-10 overflow-hidden">
+      <h2 className='font-robotoSlap text-7xl text-center mb-32'>Favourite</h2>
+      <div className='grid grid-cols-3 gap-5'>
+      {ProductList.filter((product) => product.favourite == true).map((productList) =>
+        <ProductCard key={productList.id}  
+        id={productList.id} name={productList.name}
+        price={productList.price} 
+         img={productList.img}
+         stock={productList.stock} 
+         fav={productList.favourite}/>
       
       )}
       </div>

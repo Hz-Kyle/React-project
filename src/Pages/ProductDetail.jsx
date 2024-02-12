@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { ProductList } from '../ProductList';
 import RandomProduct from '../components/randomProduct/RandomProduct';
 const ProductDetail = () => {
@@ -11,7 +11,10 @@ const ProductDetail = () => {
   const objLength = Object.keys(product).length;
   // console.log(objLength);
   //random Product list at the bottom
-
+  const navigate = useNavigate();
+  const addToCart = () => {
+    navigate('/cart');
+  }
 
   return (
     <>
@@ -21,9 +24,11 @@ const ProductDetail = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4 md:w-1/2 ">
               <div className="">
-                <div className="mb-6 lg:mb-10 lg:h-2/4 ">
-                  <img src={product.img} alt=""
-                    className="object-cover w-full lg:h-full " />
+                <div className="mb-6  lg:h-2/4 ">
+                 <div className='object-cover w-full lg:h-full '>
+                 <img src={product.img} alt=""
+                    />
+                 </div>
                 </div>
                 <div className="flex ">
                   <div className="w-1/2 p-2 sm:w-1/4">
@@ -101,21 +106,13 @@ const ProductDetail = () => {
 
 
                 </div>
-
-
-
                 <div className="flex flex-wrap items-center -mx-4 ">
                   <div className="w-full px-4 mb-4  lg:mb-0">
-                    <button
-                      className="flex items-center justify-center w-full p-4  border border-primary bg-primary text-white rounded-md">
-                      Add to Cart
-                    </button>
+                  <button onClick={addToCart} className='font-inter border bg-primary text-white border-gray p-3 w-full'>Add to Cart</button>
                   </div>
-
                 </div>
               </div>
             </div>
-
             <div className='w-full mt-40'>
               <h3 className='font-text-2xl mb-20'>You Might Also Like </h3>
               <RandomProduct />
