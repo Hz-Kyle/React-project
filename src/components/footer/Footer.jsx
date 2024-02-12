@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 
             </div>
-            <div className='w-full bg-black text-gray-400  p-14 grid grid-cols-4 mt-36 font-muli  gap-5'>
+            <div className='w-1440 bg-black text-gray-400  p-14 grid grid-cols-4 mt-36 font-muli  gap-5'>
                 <div className='hover:text-white transition-colors duration-300'>
                     <h2 className='text-3xl mb-3'>Metro</h2>
                     <p className='text-base'>Metro is a Contemporary Creative

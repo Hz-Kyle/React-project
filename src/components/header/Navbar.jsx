@@ -5,7 +5,11 @@ const Navbar = () => {
     return (
         <>
         <div className="container mx-auto">
+ feature/home
+        <div className=' w-1440 flex justify-around items-center border-b p-5 mt-1 '>
+
         <div className=' w-full flex justify-around items-center border-b p-5 mt-1 bg'>
+ main
                 <h1 className='text-3xl text-center items-center font-stardos'>Metro</h1>
                 <section className=''>
                     <nav className=''>
