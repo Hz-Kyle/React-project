@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <>
             <div className='mt-5'>
- feature/home
+
                 <h2 className='text-5xl font-robotoSlap ml-36'>Services</h2>
                 <p className='mt-4 font-muli  ml-36'> These are services thay you can get when you buy accessories from us.</p>
 
@@ -76,7 +76,7 @@ const Services = () => {
             </div>
 
                 <p></p>
- main
+
 
         </>
 

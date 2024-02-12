@@ -1,15 +1,15 @@
-import cardOne from './Images/card-1.jpg';
-import cardTwo from './Images/card-2.jpg'
-import cardThree from './Images/card-3.jpg'
-import cardFour from './Images/card-4.jpg'
-import cardFive from './Images/card-5.jpg'
-import cardSix from './Images/card-6.jpg'
-import cardSeven from './Images/card-7.png'
-import cardEight from './Images/card-8.png'
-import cardNine from './Images/card-9.jpg'
-import cardTen from './Images/card-10.png'
-import cardEleven from './Images/card-11.jpg'
-import cardTwelve from './Images/card-12.jpg'
+import cardOne from './images/card-1.jpg';
+import cardTwo from './images/card-2.jpg'
+import cardThree from './images/card-3.jpg'
+import cardFour from './images/card-4.jpg'
+import cardFive from './images/card-5.jpg'
+import cardSix from './images/card-6.jpg'
+import cardSeven from './images/card-7.png'
+import cardEight from './images/card-8.png'
+import cardNine from './images/card-9.jpg'
+import cardTen from './images/card-10.png'
+import cardEleven from './images/card-11.jpg'
+import cardTwelve from './images/card-12.jpg'
 
 
 export const ProductList = [{

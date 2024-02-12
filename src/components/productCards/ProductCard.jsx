@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import cardOne from '../../Images/card-1.jpg'
+
 import { FaHeart } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 const ProductCard = ({ id, name, price, stock, img, fav }) => {

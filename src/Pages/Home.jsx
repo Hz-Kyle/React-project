@@ -3,6 +3,8 @@ import hot2 from '../images/hot2.png'
 import m2 from '../images/m2.png'
 import hot3 from '../images/hot3.png'
 import fb1 from '../images/fb1.png'
+import fb2 from '../images/fb2.png'
+
 import cat1 from '../images/cat1.png'
 import cat2 from '../images/cat2.png'
 import cat3 from '../images/cat3.png'
@@ -224,7 +226,7 @@ const Home = () => {
             <div>
                 <h2 className='text-5xl font-robotoSlap items-center text-center mt-10'>Customer Feedback</h2>
 
-                <div>
+                <div className='max-w-6xl mx-auto'>
 
 
                     <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
@@ -232,17 +234,35 @@ const Home = () => {
                             <div className="flex items-center gap-x-6 mt-10 ml-36  bg-blue-500 rounded-md shadow-md h-190 w-1010">
                                 <img className="h-24 w-24 rounded-full ml-5" src={fb1} alt="" />
                                 <div>
-                                    <h3 className="text-base font-robotoSlap leading-7 tracking-tight text-gray-900">Olivia Rodrigo</h3>
-                                    <p className="text-sm font-muli leading-6 text-gray-950-600">I like this website and the prouct r very nice</p>
+                                    <h3 className="text-3xl font-robotoSlap leading-7 tracking-tight text-gray-900">Olivia Rodrigo</h3>
+                                    <p className="text-1xl font-muli leading-6 text-gray-950-600">I like this website and the prouct r very nice</p>
                                     <MdStarRate className='text-yellow-400' />
-                                    <button type='button' onClick={feedHandler} >See More</button>
+                                 </div>
+                            </div>
+                        </li>
+                    </ul>
 
-
-
+                    <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                        <li>
+                            <div className="flex items-center gap-x-6 mt-10 ml-36  bg-blue-500 rounded-md shadow-md h-190 w-1010">
+                                <img className="h-24 w-24 rounded-full ml-5" src={fb2} alt="" />
+                                <div>
+                                    <h3 className="text-3xl font-robotoSlap leading-7 tracking-tight text-gray-900">Tony Stark</h3>
+                                    <p className="text-1xl font-muli leading-6 text-gray-950-600">Nice for me dude....</p>
+                                    <MdStarRate className='text-yellow-400' />
                                 </div>
                             </div>
                         </li>
                     </ul>
+
+                   <div className='flex justify-center items-center mt-5'>
+                   <button type='button' onClick={feedHandler} href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center  text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                View more
+                                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                    </button>
+                   </div>
 
 
                 </div>
