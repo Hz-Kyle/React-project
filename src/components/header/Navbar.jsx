@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <>
         <div className="container mx-auto">
-        <div className=' w-full flex justify-around items-center border-b p-5 mt-1 '>
+        <div className=' w-full flex justify-around items-center border-b p-5 mt-1 bg'>
                 <h1 className='text-3xl text-center items-center font-stardos'>Metro</h1>
                 <section className=''>
                     <nav className=''>
@@ -18,6 +18,7 @@ const Navbar = () => {
                             <li><Link to="/favourite">Favourite</Link></li>
                             <li><Link to="/signin">SignIn</Link></li>
                             <li><Link to="/feedback">Feedback</Link></li>
+                            <li><Link to="/login">Login</Link></li>
                             
                             <div className="relative">
                                 <div className="absolute inset-y-0 end- flex items-center ps-3 pointer-events-none">
