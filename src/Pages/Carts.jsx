@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import card from '../images/card-1.jpg'
+import cat from '../images/cat1.png'
+import cat1 from '../images/cat2.png'
 
 const Carts = () => {
   const [count,setCount]=useState(1)
@@ -25,7 +28,7 @@ const Carts = () => {
         </thead>
         <tbody>
           <tr className="border-b-2 border-gray-500">
-            <td className="w-16 h-20"><img src="https://i.pinimg.com/564x/d8/84/f3/d884f3f2961ce18215dbb67d6cafb5fa.jpg"/></td>
+            <td className="w-16 h-20"><img src={card}/></td>
             <td className="pl-36 text-center">$15</td>
             <td className="pl-36 pt-6 flex justify-between gap-8 items-center">
               <button type="button" className="bg-blue-600 w-5 font-bold text-xl text-center text-white" onClick={decreaseHandler}>-</button>
@@ -35,7 +38,7 @@ const Carts = () => {
             <td className="pl-36 text-center"><svg className="h-8 w-8 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="3 6 5 6 21 6" />  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />  <line x1="10" y1="11" x2="10" y2="17" />  <line x1="14" y1="11" x2="14" y2="17" /></svg></td>
           </tr>
           <tr className="border-b-2 border-gray-500">
-            <td className="w-16 h-20"><img src="https://i.pinimg.com/564x/d8/84/f3/d884f3f2961ce18215dbb67d6cafb5fa.jpg"/></td>
+            <td className="w-16 h-20"><img src={cat}/></td>
             <td className="pl-36 text-center">$15</td>
             <td className="pl-36 pt-6 flex justify-between gap-8 items-center">
               <button type="button" className="bg-blue-600 w-5 font-bold text-xl text-center text-white" onClick={decreaseHandler}>-</button>
@@ -45,7 +48,7 @@ const Carts = () => {
             <td className="pl-36 text-center"><svg className="h-8 w-8 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="3 6 5 6 21 6" />  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />  <line x1="10" y1="11" x2="10" y2="17" />  <line x1="14" y1="11" x2="14" y2="17" /></svg></td>
           </tr>
           <tr className="border-b-2 border-gray-500">
-            <td className="w-16 h-20"><img src="https://i.pinimg.com/564x/d8/84/f3/d884f3f2961ce18215dbb67d6cafb5fa.jpg"/></td>
+            <td className="w-16 h-20"><img src={cat1}/></td>
             <td className="pl-36 text-center">$15</td>
             <td className="pl-36 pt-6 flex justify-between gap-8 items-center">
               <button type="button" className="bg-blue-600 w-5 font-bold text-xl text-center text-white" onClick={decreaseHandler}>-</button>
@@ -80,7 +83,7 @@ const Carts = () => {
           <button type="button" className="bg-blue-600 rounded-2xl w-28 h-8 text-white">Remove All</button>
       </div>
       </>
- main
+
   )
 }
 

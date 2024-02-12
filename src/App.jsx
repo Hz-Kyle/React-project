@@ -9,17 +9,14 @@ import Carts from './Pages/Carts'
 import Favourite from './Pages/Favourite'
 import SignIn from './Pages/SignIn'
 import Feedback from './Pages/Feedback'
- feature/home
+ 
 import ProductDetail from './Pages/ProductDetail'
 import Home from './Pages/Home'
-import ProductDetail from './Pages/ProductDetai
-feature/Products
+
 import Aboutus from './Pages/Aboutus'
 
 import Login from './Pages/Login'
-main
 
- main
 function App() {
  
 
