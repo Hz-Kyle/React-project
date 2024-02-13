@@ -77,11 +77,11 @@ const Aboutus = () => {
                     </div>
                     <div className="col-start-3 col-end-4 ... w-auto p-6 relative flex justify-around">
                     <img src="https://cdn.esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-6-940x940.png" alt="profile" className='w-28 m-auto absolute' />
-                        <div className='bg-slate-200 w-auto p-16 mt-16  '>
+                        <div className='bg-slate-200 w-auto p-16 mt-16'>
                         
                             <h3 className='items-center justify-center flex font-robotoSlap'>Technician</h3>
                             <p className='items-center justify-center flex font-inter'>Mr.Fourth</p>
-                        </div>
+                        </div>                                  
                     </div>
                     <div className="col-start-4 col-end-5 ... w-auto p-6 relative flex justify-around">
                     <img src="https://sejapregador.com/wp-content/uploads/2018/11/profile-picture-round-10.png" alt="profile" className='w-28 m-auto absolute' />
