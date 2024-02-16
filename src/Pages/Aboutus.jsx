@@ -94,9 +94,9 @@ const Aboutus = () => {
                 </div>
             </div>
             <div>
-//                 <h1 className='font-robotoSlap text-center justify-center text-4xl mb-2 mt-10 m-auto'>Team Members</h1>
-//                 <p className='flex items-center justify-center font-inter'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquid a id ea dolorum beatae dolores. </p>
-//             </div>
+                <h1 className='font-robotoSlap text-center justify-center text-4xl mb-2 mt-10 m-auto'>Team Members</h1>
+                <p className='flex items-center justify-center font-inter'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquid a id ea dolorum beatae dolores. </p>
+             </div>
             <div className=' '>
             <div className='w-auto flex flex-col items-center justify-center staffs'>
                 <div className=" flex flex-col items-center justify-center key={staffs.id} ">
