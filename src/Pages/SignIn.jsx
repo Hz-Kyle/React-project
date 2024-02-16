@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
   const [username,SetUsername] = useState("")
@@ -8,9 +8,13 @@ const SignIn = () => {
   const [password,SetPassword] = useState("")
   const [confirmpassword,SetConfirmPassword] = useState("")
 
+  const navigate = useNavigate() 
+
   const submitHandler = (e) =>{
     console.log(`Username: ${username} Phone:${phone} Email:${email} Password:${password} Confirm Password:${confirmpassword}`)
     e.preventDefault();
+    navigate("/Home")
+    
   }
     return (
     <>
@@ -108,7 +112,7 @@ const SignIn = () => {
               <div className="md:flex md:items-center">
 
                 <div className="w-full font-robotoSlap">
-                  <button className="shadow bg-blue-800 font-inter hover:bg-blue-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-32 rounded-3xl" type="submit">
+                  <button onClick="submitHandler" className="shadow bg-blue-800 font-inter hover:bg-blue-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-32 rounded-3xl" type="submit">
                     Sign Up
                   </button>
                 </div>
