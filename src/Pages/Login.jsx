@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, SetEmail] = useState("")
     const [password, SetPassword] = useState("")
+    const navigate= useNavigate()
 
     const submitHandler = (event) => {
 
         event.preventDefault();
 
+    }
+
+    const loginHandler = (e) => {
+        navigate("/Home")
     }
 
     const passwordHandler = (event) => {
@@ -84,7 +89,7 @@ const Login = () => {
                             <div className="md:flex md:items-center">
                                 
                                 <div className="w-full m-auto">
-                                    <button className="shadow bg-blue-800 hover:bg-blue-600 font-inter focus:shadow-outline focus:outline-none text-white font-bold py-2 px-36 rounded-3xl" type="submit">
+                                    <button onClick={loginHandler} className="shadow bg-blue-800 hover:bg-blue-600 font-inter focus:shadow-outline focus:outline-none text-white font-bold py-2 px-36 rounded-3xl" type="submit">
                                         Login
                                     </button>
                                 </div>
@@ -97,7 +102,7 @@ const Login = () => {
                                             Create New Account
                                         </span>
                                         <span className='text-blue-600 ml-12 font-robotoSlap'>
-                                            <Link to="/signin">SIGN UP NOW</Link>
+                                            <Link to="/signup">SIGN UP NOW</Link>
                                         </span>
 
 
