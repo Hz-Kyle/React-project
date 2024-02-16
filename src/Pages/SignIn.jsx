@@ -13,7 +13,7 @@ const SignIn = () => {
   const submitHandler = (e) =>{
     console.log(`Username: ${username} Phone:${phone} Email:${email} Password:${password} Confirm Password:${confirmpassword}`)
     e.preventDefault();
-    navigate("/Home")
+    navigate("/")
     
   }
     return (

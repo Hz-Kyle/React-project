@@ -13,7 +13,7 @@ const Login = () => {
     }
 
     const loginHandler = (e) => {
-        navigate("/Home")
+        navigate("/")
     }
 
     const passwordHandler = (event) => {
