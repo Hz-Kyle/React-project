@@ -36,16 +36,13 @@ feature/home
 
       {/* <Route path='/' element={<Home/>} />  */}
                    
-          <Route path='/services' element={<Services />} />
- feature/Products
-         <Route path='/products' element={<Products/>} />
+        
          <Route path='/aboutus' element={<Aboutus/>} />
 
-     main
- main
+
           <Route path='/cart' element={<Carts/>} />
           <Route path='/favourite' element= {<Favourite/>}/>
-          <Route path='/signin' element={<SignIn/>} />
+          <Route path='/signup' element={<SignIn/>} />
           <Route path='/feedback' element={<Feedback/>} /> 
           <Route path='/productDetail/:id' element = {<ProductDetail/>}  />
           <Route path='/login' element={<Login/>}/>

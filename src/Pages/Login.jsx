@@ -97,7 +97,7 @@ const Login = () => {
                                             Create New Account
                                         </span>
                                         <span className='text-blue-600 ml-12 font-robotoSlap'>
-                                            <Link to="/signin">SIGN UP NOW</Link>
+                                            <Link to="/signup">SIGN UP NOW</Link>
                                         </span>
 
 
